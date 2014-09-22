@@ -152,6 +152,7 @@
     <Content Include="Images\ReadMe.txt" />
     <Content Include="Images\refresh.png" />
     <Content Include="README_FIRST.txt" />
+    <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">

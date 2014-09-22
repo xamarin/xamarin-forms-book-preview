@@ -98,6 +98,11 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_edit.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_refresh.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_search.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PlatformVisuals\PlatformVisuals.csproj">
