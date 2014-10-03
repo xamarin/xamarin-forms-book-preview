@@ -18,6 +18,7 @@ namespace HelloSap.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = HelloSap.App.GetMainPage().ConvertPageToUIElement(this);

@@ -18,6 +18,7 @@ namespace Greetings.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = Greetings.App.GetMainPage().ConvertPageToUIElement(this);

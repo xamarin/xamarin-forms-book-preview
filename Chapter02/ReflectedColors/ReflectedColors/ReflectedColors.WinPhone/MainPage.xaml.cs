@@ -18,6 +18,7 @@ namespace ReflectedColors.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ReflectedColors.App.GetMainPage().ConvertPageToUIElement(this);

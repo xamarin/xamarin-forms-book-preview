@@ -13,6 +13,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HelloSap", "HelloSap\HelloS
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		HelloSap\HelloSap\HelloSap.projitems*{2bca2efe-5da2-411c-9348-c3bfcd91b781}*SharedItemsImports = 4
+		HelloSap\HelloSap\HelloSap.projitems*{19991463-bb25-4325-b073-60ab1aa320ff}*SharedItemsImports = 4
+		HelloSap\HelloSap\HelloSap.projitems*{da6285db-6f91-4d0b-abb6-53c7bb422eaf}*SharedItemsImports = 4
 		HelloSap\HelloSap\HelloSap.projitems*{42cb82f8-1180-491a-be4c-a6301a74aeab}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,6 +18,7 @@ namespace HelloPcl.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = HelloPcl.App.GetMainPage().ConvertPageToUIElement(this);

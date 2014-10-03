@@ -18,6 +18,7 @@ namespace SimplestKeypad.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = SimplestKeypad.App.GetMainPage().ConvertPageToUIElement(this);

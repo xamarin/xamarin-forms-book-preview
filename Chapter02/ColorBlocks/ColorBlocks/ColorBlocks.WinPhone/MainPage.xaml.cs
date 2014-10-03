@@ -18,6 +18,7 @@ namespace ColorBlocks.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ColorBlocks.App.GetMainPage().ConvertPageToUIElement(this);

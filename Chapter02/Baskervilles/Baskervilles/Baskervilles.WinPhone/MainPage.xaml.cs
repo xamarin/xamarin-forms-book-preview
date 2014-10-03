@@ -18,6 +18,7 @@ namespace Baskervilles.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = Baskervilles.App.GetMainPage().ConvertPageToUIElement(this);

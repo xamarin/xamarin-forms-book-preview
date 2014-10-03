@@ -2,7 +2,7 @@
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US"/>
-  <App xmlns="" ProductID="4cee5cf5-8656-4a07-8673-76fabf76d076" Title="Baskervilles.WinPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Baskervilles.WinPhone author" Description="Sample description" Publisher="Baskervilles.WinPhone" PublisherID="54b0d2ad-32ce-4633-8eb1-b1bbe307ee59">
+  <App xmlns="" ProductID="{4cee5cf5-8656-4a07-8673-76fabf76d076}" Title="Baskervilles.WinPhone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Baskervilles.WinPhone author" Description="Sample description" Publisher="Baskervilles.WinPhone" PublisherID="{54b0d2ad-32ce-4633-8eb1-b1bbe307ee59}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING"/>

@@ -18,6 +18,7 @@ namespace ColorList.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ColorList.App.GetMainPage().ConvertPageToUIElement(this);

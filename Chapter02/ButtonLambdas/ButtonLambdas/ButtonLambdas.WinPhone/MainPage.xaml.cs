@@ -18,6 +18,7 @@ namespace ButtonLambdas.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ButtonLambdas.App.GetMainPage().ConvertPageToUIElement(this);

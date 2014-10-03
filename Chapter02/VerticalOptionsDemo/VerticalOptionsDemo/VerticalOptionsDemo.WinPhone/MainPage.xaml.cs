@@ -18,6 +18,7 @@ namespace VerticalOptionsDemo.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = VerticalOptionsDemo.App.GetMainPage().ConvertPageToUIElement(this);

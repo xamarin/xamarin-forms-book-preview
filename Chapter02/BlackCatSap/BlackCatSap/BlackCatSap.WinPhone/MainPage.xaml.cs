@@ -18,6 +18,7 @@ namespace BlackCatSap.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = BlackCatSap.App.GetMainPage().ConvertPageToUIElement(this);

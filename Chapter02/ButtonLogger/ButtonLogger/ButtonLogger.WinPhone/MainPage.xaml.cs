@@ -18,6 +18,7 @@ namespace ButtonLogger.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ButtonLogger.App.GetMainPage().ConvertPageToUIElement(this);

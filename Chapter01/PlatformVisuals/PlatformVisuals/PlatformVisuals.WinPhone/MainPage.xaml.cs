@@ -18,6 +18,7 @@ namespace PlatformVisuals.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = PlatformVisuals.App.GetMainPage().ConvertPageToUIElement(this);
