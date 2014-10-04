@@ -18,6 +18,7 @@ namespace NoteTaker6.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = NoteTaker6.App.GetMainPage().ConvertPageToUIElement(this);
