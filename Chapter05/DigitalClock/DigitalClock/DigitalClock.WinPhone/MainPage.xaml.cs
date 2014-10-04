@@ -18,7 +18,7 @@ namespace DigitalClock.WinPhone
         public MainPage()
         {
             InitializeComponent();
-            this.SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = DigitalClock.App.GetMainPage().ConvertPageToUIElement(this);

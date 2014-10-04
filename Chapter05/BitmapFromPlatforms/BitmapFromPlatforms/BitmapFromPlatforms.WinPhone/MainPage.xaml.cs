@@ -18,6 +18,7 @@ namespace BitmapFromPlatforms.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = BitmapFromPlatforms.App.GetMainPage().ConvertPageToUIElement(this);

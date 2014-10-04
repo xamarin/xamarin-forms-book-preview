@@ -18,6 +18,7 @@ namespace FontSizes.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = FontSizes.App.GetMainPage().ConvertPageToUIElement(this);

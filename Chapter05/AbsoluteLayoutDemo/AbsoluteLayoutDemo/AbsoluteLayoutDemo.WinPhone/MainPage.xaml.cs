@@ -18,6 +18,7 @@ namespace AbsoluteLayoutDemo.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = AbsoluteLayoutDemo.App.GetMainPage().ConvertPageToUIElement(this);

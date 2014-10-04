@@ -18,7 +18,7 @@ namespace ProportionalDotMatrixClock.WinPhone
         public MainPage()
         {
             InitializeComponent();
-            this.SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ProportionalDotMatrixClock.App.GetMainPage().ConvertPageToUIElement(this);
