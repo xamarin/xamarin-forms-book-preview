@@ -18,6 +18,7 @@ namespace KeypadGrid.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = KeypadGrid.App.GetMainPage().ConvertPageToUIElement(this);

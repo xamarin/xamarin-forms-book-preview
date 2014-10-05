@@ -24,11 +24,13 @@ namespace FormsBook.Utilities
             });
 
             // Add a gesture recognizer for tap.
-            view.GestureRecognizers.Add(
-                new TapGestureRecognizer((View tappedView) =>
+            TapGestureRecognizer recognizer = new TapGestureRecognizer();
+            recognizer.Tapped += (sender, args) =>
                 {
+                    View tappedView = (View)sender;
                     tappedView.SetRadioState(true);
-                }));
+                };
+            view.GestureRecognizers.Add(recognizer);
         }
 
         public static void SetRadioState(this View view, bool isToggled)

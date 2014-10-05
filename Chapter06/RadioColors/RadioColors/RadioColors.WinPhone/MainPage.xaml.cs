@@ -18,6 +18,7 @@ namespace RadioColors.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = RadioColors.App.GetMainPage().ConvertPageToUIElement(this);

@@ -18,7 +18,7 @@ namespace SliderStepperSwitchBindings.WinPhone
         public MainPage()
         {
             InitializeComponent();
-            this.SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = SliderStepperSwitchBindings.App.GetMainPage().ConvertPageToUIElement(this);

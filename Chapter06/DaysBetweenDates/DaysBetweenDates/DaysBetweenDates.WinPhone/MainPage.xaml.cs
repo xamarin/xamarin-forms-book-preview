@@ -18,6 +18,7 @@ namespace DaysBetweenDates.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = DaysBetweenDates.App.GetMainPage().ConvertPageToUIElement(this);

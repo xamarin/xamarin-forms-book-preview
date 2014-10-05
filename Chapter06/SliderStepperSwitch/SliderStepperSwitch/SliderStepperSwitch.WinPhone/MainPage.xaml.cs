@@ -18,6 +18,7 @@ namespace SliderStepperSwitch.WinPhone
         public MainPage()
         {
             InitializeComponent();
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = SliderStepperSwitch.App.GetMainPage().ConvertPageToUIElement(this);

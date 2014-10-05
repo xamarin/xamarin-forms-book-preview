@@ -18,7 +18,7 @@ namespace ColorScroll.WinPhone
         public MainPage()
         {
             InitializeComponent();
-            this.SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = ColorScroll.App.GetMainPage().ConvertPageToUIElement(this);

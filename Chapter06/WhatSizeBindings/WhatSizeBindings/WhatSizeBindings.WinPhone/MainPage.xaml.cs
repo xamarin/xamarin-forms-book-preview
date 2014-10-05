@@ -18,7 +18,7 @@ namespace WhatSizeBindings.WinPhone
         public MainPage()
         {
             InitializeComponent();
-            this.SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+            SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
             Content = WhatSizeBindings.App.GetMainPage().ConvertPageToUIElement(this);

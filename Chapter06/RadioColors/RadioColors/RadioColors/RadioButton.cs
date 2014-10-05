@@ -41,12 +41,12 @@ namespace FormsBook.Utilities
             TapGestureRecognizer recognizer = new TapGestureRecognizer
             {
                 Parent = this,
-                NumberOfTapsRequired = 1,
-                TappedCallback = (View view, Object args) =>
-                    {
-                        ((RadioButton)view).IsToggled = true;
-                    }
+                NumberOfTapsRequired = 1
             };
+            recognizer.Tapped += (ssender, args) =>
+                {
+                    this.IsToggled = true;
+                };
 
             this.GestureRecognizers.Add (recognizer);
         }
