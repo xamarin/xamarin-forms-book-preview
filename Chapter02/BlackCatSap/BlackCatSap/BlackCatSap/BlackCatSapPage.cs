@@ -69,7 +69,10 @@ namespace BlackCatSap
             {
                 Content = textStack,
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                Padding = new Thickness(5, 0)
+                Padding = new Thickness(5, 0),
+
+                // Required for Android in Xamarin.Forms 1.2.3
+                IsClippedToBounds = true
             };
 
             // Add the ScrollView as a second child of mainStack.
