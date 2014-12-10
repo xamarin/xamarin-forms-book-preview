@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 
 using Xamarin.Forms.Platform.Android;
+using Xamarin.Forms;
 
 namespace PlatformVisuals.Droid
 {
@@ -19,9 +20,9 @@ namespace PlatformVisuals.Droid
         {
             base.OnCreate(bundle);
 
-            Xamarin.Forms.Forms.Init(this, bundle);
+            Forms.Init(this, bundle);
 
-            SetPage(App.GetMainPage());
+			LoadApplication(new App());
         }
     }
 }

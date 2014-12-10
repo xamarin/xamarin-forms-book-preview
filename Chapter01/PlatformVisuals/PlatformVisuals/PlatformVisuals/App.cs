@@ -3,11 +3,12 @@ using Xamarin.Forms;
 
 namespace PlatformVisuals
 {
-    public class App
+	public class App : Application
     {
-        public static Page GetMainPage()
-        {
-            return new NavigationPage(new PlatformVisualsPage());
-        }
-    }
+		public App ()
+		{
+			// The root page of your application
+			MainPage = new NavigationPage (new PlatformVisualsPage ());
+		}
+	}
 }
