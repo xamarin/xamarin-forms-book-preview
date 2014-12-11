@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace NoteTaker9
 {
-    public class App
+    public class App : Application
     {
         static NoteFolder noteFolder = new NoteFolder();
 
@@ -12,9 +12,9 @@ namespace NoteTaker9
             get { return noteFolder; }
         }
 
-        public static Page GetMainPage()
+        public App ()
         {
-            return new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new HomePage());
         }
     }
 }

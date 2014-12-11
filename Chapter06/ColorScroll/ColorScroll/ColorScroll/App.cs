@@ -7,11 +7,11 @@ using Xamarin.Forms;
 
 namespace ColorScroll
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new ColorScrollPage();
+            MainPage = new ColorScrollPage();
         }
     }
 }

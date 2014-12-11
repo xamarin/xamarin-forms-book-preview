@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace SimplestKeypad
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new SimplestKeypadPage();
+            MainPage = new SimplestKeypadPage();
         }
     }
 }

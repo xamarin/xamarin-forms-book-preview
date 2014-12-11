@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace ButtonLogger
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new ButtonLoggerPage();
+            MainPage = new ButtonLoggerPage();
         }
     }
 }

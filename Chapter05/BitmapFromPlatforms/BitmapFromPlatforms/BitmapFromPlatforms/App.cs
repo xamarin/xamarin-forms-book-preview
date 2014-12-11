@@ -7,11 +7,11 @@ using Xamarin.Forms;
 
 namespace BitmapFromPlatforms
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new BitmapFromPlatformsPage();
+            MainPage = new BitmapFromPlatformsPage();
         }
     }
 }

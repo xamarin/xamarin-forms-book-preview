@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace VerticalOptionsDemo
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new VerticalOptionsDemoPage();
+            MainPage = new VerticalOptionsDemoPage();
         }
     }
 }

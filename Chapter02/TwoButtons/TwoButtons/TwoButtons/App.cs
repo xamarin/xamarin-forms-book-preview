@@ -5,9 +5,9 @@ namespace TwoButtons
 {
 	public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new TwoButtonsPage();
+            MainPage = new TwoButtonsPage();
         }
     }
 }

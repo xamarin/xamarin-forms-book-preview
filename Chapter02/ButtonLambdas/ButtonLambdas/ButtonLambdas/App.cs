@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace ButtonLambdas
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new ButtonLambdasPage();
+            MainPage = new ButtonLambdasPage();
         }
     }
 }

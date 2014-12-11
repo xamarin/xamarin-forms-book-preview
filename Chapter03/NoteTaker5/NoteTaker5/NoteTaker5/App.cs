@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace NoteTaker5
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
+        public App ()
         {
-            return new NoteTaker5Page();
+            MainPage = new NoteTaker5Page();
         }
     }
 }
