@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.WinPhone;
 
 
 namespace WhatSize.WinPhone
