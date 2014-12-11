@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace ButtonLambdas.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace ButtonLambdas.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = ButtonLambdas.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new ButtonLambdas.App());
         }
     }
 }

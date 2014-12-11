@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace ButtonLogger.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace ButtonLogger.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = ButtonLogger.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new ButtonLogger.App());
         }
     }
 }

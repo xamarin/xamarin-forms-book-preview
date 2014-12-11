@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace Baskervilles.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace Baskervilles.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = Baskervilles.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new Baskervilles.App());
         }
     }
 }

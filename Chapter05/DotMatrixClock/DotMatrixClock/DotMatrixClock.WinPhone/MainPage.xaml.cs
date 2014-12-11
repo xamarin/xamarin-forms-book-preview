@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace DotMatrixClock.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace DotMatrixClock.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = DotMatrixClock.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new DotMatrixClock.App());
         }
     }
 }

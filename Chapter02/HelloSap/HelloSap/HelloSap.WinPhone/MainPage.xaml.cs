@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace HelloSap.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace HelloSap.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = HelloSap.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new HelloSap.App());
         }
     }
 }

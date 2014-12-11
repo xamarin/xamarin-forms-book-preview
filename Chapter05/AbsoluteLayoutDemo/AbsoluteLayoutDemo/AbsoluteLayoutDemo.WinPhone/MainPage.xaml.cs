@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace AbsoluteLayoutDemo.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace AbsoluteLayoutDemo.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = AbsoluteLayoutDemo.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new AbsoluteLayoutDemo.App());
         }
     }
 }

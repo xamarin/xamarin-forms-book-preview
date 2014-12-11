@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace BitmapFromWebsite.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace BitmapFromWebsite.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = BitmapFromWebsite.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new BitmapFromWebsite.App());
         }
     }
 }

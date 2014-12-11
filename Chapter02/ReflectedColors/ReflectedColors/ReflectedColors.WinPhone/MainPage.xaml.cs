@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace ReflectedColors.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace ReflectedColors.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = ReflectedColors.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new ReflectedColors.App());
         }
     }
 }

@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace BlackCat.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace BlackCat.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = BlackCat.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new BlackCat.App());
         }
     }
 }

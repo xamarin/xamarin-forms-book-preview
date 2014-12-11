@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace SliderStepperSwitchBindings.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace SliderStepperSwitchBindings.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = SliderStepperSwitchBindings.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new SliderStepperSwitchBindings.App());
         }
     }
 }

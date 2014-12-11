@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace NoteTaker8.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace NoteTaker8.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = NoteTaker8.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new NoteTaker8.App());
         }
     }
 }

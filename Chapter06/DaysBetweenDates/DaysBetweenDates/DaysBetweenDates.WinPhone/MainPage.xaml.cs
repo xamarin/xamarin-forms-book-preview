@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace DaysBetweenDates.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace DaysBetweenDates.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = DaysBetweenDates.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new DaysBetweenDates.App());
         }
     }
 }

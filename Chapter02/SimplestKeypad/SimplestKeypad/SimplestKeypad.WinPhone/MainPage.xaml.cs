@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace SimplestKeypad.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace SimplestKeypad.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = SimplestKeypad.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new SimplestKeypad.App());
         }
     }
 }

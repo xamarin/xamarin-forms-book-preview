@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace WhatSize.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace WhatSize.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = WhatSize.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new WhatSize.App());
         }
     }
 }

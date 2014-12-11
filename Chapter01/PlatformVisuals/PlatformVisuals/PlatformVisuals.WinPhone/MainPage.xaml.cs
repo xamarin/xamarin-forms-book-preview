@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace PlatformVisuals.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace PlatformVisuals.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = PlatformVisuals.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new PlatformVisuals.App());
         }
     }
 }

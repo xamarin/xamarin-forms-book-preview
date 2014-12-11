@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace ColorBlocks.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace ColorBlocks.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = ColorBlocks.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new ColorBlocks.App());
         }
     }
 }

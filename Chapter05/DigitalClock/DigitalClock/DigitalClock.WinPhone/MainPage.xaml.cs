@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace DigitalClock.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace DigitalClock.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = DigitalClock.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new DigitalClock.App());
         }
     }
 }

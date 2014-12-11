@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace EstimatedFontSize.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace EstimatedFontSize.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = EstimatedFontSize.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new EstimatedFontSize.App());
         }
     }
 }

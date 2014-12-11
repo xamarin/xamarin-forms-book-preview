@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace TwoButtons.WinPhone
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class MainPage : FormsApplicationPage
     {
         public MainPage()
         {
@@ -21,7 +21,7 @@ namespace TwoButtons.WinPhone
             SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
 
             Forms.Init();
-            Content = TwoButtons.App.GetMainPage().ConvertPageToUIElement(this);
+            LoadApplication(new TwoButtons.App());
         }
     }
 }
