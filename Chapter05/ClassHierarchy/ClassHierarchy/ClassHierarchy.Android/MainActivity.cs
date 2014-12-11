@@ -15,7 +15,7 @@ namespace ClassHierarchy.Droid
     [Activity(Label = "ClassHierarchy", MainLauncher = true, 
         ConfigurationChanges = ConfigChanges.ScreenSize | 
                                     ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -23,7 +23,7 @@ namespace ClassHierarchy.Droid
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            SetPage(App.GetMainPage());
+            LoadApplication(new App());
         }
     }
 }

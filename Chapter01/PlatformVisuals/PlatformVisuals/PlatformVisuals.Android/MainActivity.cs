@@ -14,7 +14,7 @@ using Xamarin.Forms;
 namespace PlatformVisuals.Droid
 {
     [Activity(Label = "PlatformVisuals", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {

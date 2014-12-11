@@ -12,7 +12,7 @@ using Xamarin.Forms.Platform.Android;
 namespace BitmapFromPlatforms.Droid
 {
     [Activity(Label = "BitmapFromPlatforms", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -20,7 +20,7 @@ namespace BitmapFromPlatforms.Droid
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            SetPage(App.GetMainPage());
+            LoadApplication(new App());
         }
     }
 }

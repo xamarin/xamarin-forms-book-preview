@@ -13,7 +13,7 @@ using Xamarin.Forms.Platform.Android;
 namespace NoteTaker1.Droid
 {
     [Activity(Label = "NoteTaker1", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -21,7 +21,7 @@ namespace NoteTaker1.Droid
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            SetPage(App.GetMainPage());
+            LoadApplication(new App());
         }
     }
 }
