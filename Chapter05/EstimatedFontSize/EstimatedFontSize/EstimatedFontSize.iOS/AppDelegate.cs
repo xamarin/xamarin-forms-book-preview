@@ -28,8 +28,6 @@ namespace EstimatedFontSize.iOS
         {
             Forms.Init();
 
-
-
             LoadApplication (new App ());
 
             return base.FinishedLaunching (app, options);

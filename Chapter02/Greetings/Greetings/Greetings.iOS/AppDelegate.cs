@@ -28,8 +28,6 @@ namespace Greetings.iOS
         {
             Forms.Init();
 
-
-
             LoadApplication (new App ());
 
             return base.FinishedLaunching (app, options);

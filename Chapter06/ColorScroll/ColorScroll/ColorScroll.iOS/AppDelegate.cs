@@ -28,8 +28,6 @@ namespace ColorScroll.iOS
         {
             Forms.Init();
 
-
-
             LoadApplication (new App ());
 
             return base.FinishedLaunching (app, options);

@@ -28,8 +28,6 @@ namespace NoteTaker5.iOS
         {
             Forms.Init();
 
-
-
             LoadApplication (new App ());
 
             return base.FinishedLaunching (app, options);

@@ -28,8 +28,6 @@ namespace NoteTaker2Pcl.iOS
         {
             Forms.Init();
 
-
-
             LoadApplication (new App ());
 
             return base.FinishedLaunching (app, options);
