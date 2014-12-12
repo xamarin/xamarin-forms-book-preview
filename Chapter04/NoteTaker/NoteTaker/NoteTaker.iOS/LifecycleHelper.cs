@@ -1,5 +1,5 @@
 using System;
-using MonoTouch.UIKit;
+using UIKit;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(PlatformHelpers.iOS.LifecycleHelper))]
