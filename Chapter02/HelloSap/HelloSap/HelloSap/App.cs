@@ -11,7 +11,7 @@ namespace HelloSap
 	{
 		public App ()
 		{
-			return new ContentPage
+			MainPage = new ContentPage
 			{
 				Content = new Label {
 					Text = "Hello, Forms !",
