@@ -6,7 +6,7 @@ Sample code for the Preview Edition of "Creating Mobile Apps with Xamarin.Forms"
 Notes
 -----
 
-All projects have been upgraded to Xamarin.Forms 1.2.3.
+All projects have been upgraded to Xamarin.Forms 1.3.1.
 
 ###Introduction
 
